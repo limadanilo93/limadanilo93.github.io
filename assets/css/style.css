@@ -4,7 +4,7 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 :root{
-    font-family: 'Poppins', sans-serif;
+
     font-size: 10px;
     --main-bkg: #E5E5E5;
     --header-bkg:#D8D8D8;
@@ -17,4 +17,61 @@
     --lht: 12rem;
     --lhsbt: 9rem;
     
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 11.9rem;
+}
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6.05rem;
+
+}
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.navbar-list{
+    display: inline-flex;
+}
+.nav-item{
+    margin: 0 0 0 3.3rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.simple{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bkg__fill{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: min(1119px, 77%);
+    height:max(100%, 713px);
+    background: var(--header-bkg);
+    z-index: 0;
+    opacity: 0.2217;
+}
+hr{
+    height: 238px;
+    width: 1px;
+    color: #D8D8D8;
+    border:solid #D8D8D8;
+
+}
+img{
+    width: 20rem;
 }
