@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio - Danilo Lima</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/js/script.js" defer></script>
 </head>
@@ -19,58 +19,66 @@
             </ul>
         </nav>
         <section class="simple">
-            <h1 class="headline">Oi, Sou eu Danilo</h1>
+            <h1 class="headline"><p class="line">Oi,</p>
+            <p class="line">Sou eu</p>
+            <p class="line">Danilo</p></h1>
             <hr>
             <div class="extra">
-                <p class="my__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellat magnam, explicabo earum numquam sed aliquid ea ad, culpa perferendis quisquam nemo dignissimos qui laudantium! Omnis ullam veritatis tempora facilis itaque veniam delectus quos inventore. Dicta dolorum necessitatibus voluptatibus hic.</p>
+                <p class="my__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellat magnam, explicabo earum numquam sed aliquid ea ad, culpa perferendis quisquam nemo dignissimos qui laudantium! .</p>
+                <p class="ask__download">Baixe o Cúrriculo abaixo</p>
                 <ul class="social">
                     <li class="social__links"><a href="https://twitter.com/limadanilo" target="_blank" rel="noopener noreferrer">TW.</a></li>
                     <li class="social__links"><a href="https://www.instagram.com/iam_limadanilo/" target="_blank" rel="noopener noreferrer">IN.</a></li>
                     <li class="social__links"><a href="https://www.facebook.com/limadaniloFa" target="_blank" rel="noopener noreferrer">FB.</a></li>
                 </ul>
+                <span class="bkg__fill"></span>
             </div>
         </section>
         <span class="download__cv">
             Download CV
         </span>
-        <span class="bkg__fill"></span>
+
     </header>
 
     <main class="container">
-        <section class="section" id="work">
+        <section class="sections" id="work">
             <h2 class="titles title__work">Experiências</h2>
+            
             <div class="section__content content__work">
-                <div class="companies">
+                <div class="company__names">
+                    <div class="company">
+                        <p class="name">NASA</p>
+                        <p class="date">2021</p>
+                    </div>
                     <div class="company">
                         <p class="name">Empresa ficcional</p>
                         <p class="date">2016</p>
                     </div>
+                    <div class="company">
+                        <p class="name">Fictive company</p>
+                        <p class="date">2018</p>
+                    </div>
+                    <div class="company">
+                        <p class="name">Aquela Mesma</p>
+                        <p class="date">2020</p>
+                    </div>
+                </div>
+                    
+                <div class="companies">
                     <div class="description">
-                        <p class="desc__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil consectetur alias fuga adipisci autem? Aut.</p>
+                        <p class="desc__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil consectetur alias fuga </p>
                         <div class="desc__lang">
                             <span class="lang">HTML</span>
                             <span class="lang">CSS</span>
                             <span class="lang">JAVASCRIPT</span>
                         </div>
                     </div>
-                </div>
-                <div class="companies">
-                    <div class="company">
-                        <p class="name">Fictive company</p>
-                        <p class="date">2018</p>
-                    </div>
                     <div class="description">
-                        <p class="desc__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolore, odio impedit perspiciatis sunt explicabo labore perferendis.</p>
+                        <p class="desc__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolore, odio impedit </p>
                         <div class="desc__lang">
                             <span class="lang">HTML</span>
                             <span class="lang">CSS</span>
                         </div>
-                    </div>
-                </div>
-                <div class="companies">
-                    <div class="company">
-                        <p class="name">Aquela Mesma</p>
-                        <p class="date">2020</p>
                     </div>
                     <div class="description">
                         <p class="desc__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt corporis sapiente eveniet.</p>
@@ -80,14 +88,8 @@
                             <span class="lang">JAVASCRIPT</span>
                         </div>
                     </div>
-                </div>
-                <div class="companies">
-                    <div class="company">
-                        <p class="name">NASA</p>
-                        <p class="date">2021</p>
-                    </div>
                     <div class="description">
-                        <p class="desc__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et culpa rerum iure quae facilis voluptatem voluptate? Distinctio nulla praesentium sapiente?</p>
+                        <p class="desc__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et culpa rerum iure quae </p>
                         <div class="desc__lang">
                             <span class="lang">HTML</span>
                             <span class="lang">CSS</span>
@@ -96,11 +98,15 @@
                         </div>
                     </div>
                 </div>
+                
+                    
+                    
+                
 
             </div>
         </section>
-        <section class="section" id="projects">
-            <h2 class="titles title__projects"></h2>
+        <section class="sections" id="projects">
+            <h2 class="titles title__projects">Projetos</h2>
             <div class="project">
                 <img src="./assets/img/1.jpg" alt="Celular entre caixas" class="project__img">
                 <div class="project__about">
@@ -124,7 +130,7 @@
             </div>
         </section>
         
-        <section class="section" id="about">
+        <section class="sections" id="about">
             <h2 class="titles title__about">Sobre Mim</h2>
             <p class="about__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora reiciendis voluptatem nihil, ipsum, asperiores ad nesciunt tenetur quae incidunt debitis excepturi praesentium numquam eius. Sit, accusantium sequi voluptatem aut ipsum dolores aperiam? Magnam sunt magni distinctio mollitia, nulla, itaque ducimus voluptatem expedita soluta numquam molestiae, illo eaque? Ut vitae excepturi, nisi animi, eius laudantium, aut nihil praesentium molestiae possimus voluptate.</p>
             <img src="./assets/img/living-room-interior-wall-mockup-with-sofa-table-white-background3d-rendering.jpg" alt="Imaagem da sala" class="about__img">

@@ -9,7 +9,7 @@
     --main-bkg: #E5E5E5;
     --header-bkg:#D8D8D8;
     --iten-bkg: #FFE8E8;
-    --lang-bkg: #666666;
+    --lang-bkg: #ededed;
     --title: #999999;
     --text: #6D6D6D;
     --contact-t: #7E7C7C;
@@ -23,11 +23,14 @@ body{
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
     margin: 0 11.9rem;
+    /*background: var(--main-bkg);*/
 }
 .cabecalho{
     display: flex;
     flex-direction: column;
     margin-top: 6.05rem;
+    height: 71.3rem;
+    justify-content:space-between;
 
 }
 .navbar{
@@ -54,24 +57,107 @@ a{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+
 }
+.headline{
+    font-size:10rem;
+    color:var(--title)
+}
+.extra{
+    display:flex;
+    flex-direction: column;
+}
+.extra{
+    width: min(55.4rem, 50%);
+    font-size: 1.8rem;
+    align-self: flex-end;
+    /*margin-top: 23.95rem;*/
+    line-height: 3.6rem;
+    color: var(--text);
+
+}
+.social__links{
+    display: inline-block;
+    padding-right: 4.2rem;
+    color: black;
+    font-weight: 500;
+}
+
 .bkg__fill{
     position: absolute;
     top: 0;
     right: 0;
     width: min(1119px, 77%);
-    height:max(100%, 713px);
+    height: 713px;
     background: var(--header-bkg);
-    z-index: 0;
+    z-index: -1;
     opacity: 0.2217;
 }
 hr{
-    height: 238px;
+    height:238px;
     width: 1px;
     color: #D8D8D8;
-    border:solid #D8D8D8;
+    align-self: flex-end;
+
 
 }
+.download__cv{
+    background: var(--iten-bkg);
+    width: fit-content;
+    padding: 4rem 4.9rem 3.7rem 4rem;
+    font-size:3.6rem;
+    text-transform: uppercase;
+}
+.sections{
+    margin: 10rem 0;
+}
+.titles{
+    margin: 0 0 5.2rem;
+    font-size: 9rem;
+    font-weight: 700;
+    color: var(--title);
+}
+.content__work{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr;
+}
+.company, .description{
+    margin: 0 0 6rem;
+}
+.name{
+    font-size:3rem;
+    font-weight:500;
+    color: var(--text)
+}
+.date{
+    font-size:1.8rem;
+    font-weight:500;
+    color: var(--contact-t);
+    line-height: 3.6rem;
+    padding-top: .6rem;
+}
+.companies, .company__names{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.desc__text{
+    font-size:1.8rem;
+    font-weight:500;
+    color: var(--text);
+    padding: .6rem 0 .8rem 0;
+}
+.lang{
+    font-size: 1.2rem;
+    padding: 0.4rem 0.8rem;
+    margin: 0.9rem 1.6rem 0 0;
+    background: var(--lang-bkg);
+    border-radius:1rem;
+}
+
 img{
     width: 20rem;
+
 }
