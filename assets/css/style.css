@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 :root{
 
-    font-size: 10px;
+    font-size: clamp(3px, 0.6944vw, 18px);
     --main-bkg: #FFF;
     --header-bkg:#D8D8D8;
     --iten-bkg: #FFE8E8;
@@ -43,7 +43,7 @@ body{
 }
 .nav-item{
     margin: 0 0 0 3.3rem;
-    font-size: 1.6rem;
+    font-size: clamp(10px, 1.6rem, 20px);
     font-weight: 500;
     color: black;
     text-transform: uppercase;
@@ -72,9 +72,8 @@ a{
 }
 .extra{
     width: min(55.4rem, 50%);
-    font-size: 1.8rem;
+    font-size: clamp(11px,1.8rem, 22px);
     align-self: flex-end;
-    /*margin-top: 23.95rem;*/
     line-height: 3.6rem;
     color: var(--text);
 
@@ -90,14 +89,14 @@ a{
     position: absolute;
     top: 0;
     right: 0;
-    width: min(1119px, 77%);
-    height: 713px;
+    width: min(111.9rem, 77%);
+    height: 71.3rem;
     background: var(--header-bkg);
     z-index: -1;
     opacity: 0.2217;
 }
 hr{
-    height:238px;
+    height:clamp(150px, 23.8rem, 238px);
     width: 1px;
     color: #D8D8D8;
     align-self: flex-end;
@@ -108,9 +107,9 @@ hr{
     background: var(--iten-bkg);
     width: fit-content;
     padding: 4rem 4.9rem 3.7rem 4rem;
-    font-size:3.6rem;
+    font-size:clamp(16px, 3.6rem, 42px);
     text-transform: uppercase;
-    margin-left: 8.1rem;
+    margin: 2rem 0 0 8.1rem;
     font-weight: 500;
 }
 .sections{
@@ -118,7 +117,7 @@ hr{
 }
 .titles{
     margin: 0 0 5.2rem;
-    font-size: 9rem;
+    font-size: clamp(30px, 9rem, 120px);
     font-weight: 700;
     color: var(--title);
 }
@@ -132,12 +131,12 @@ hr{
 }
 
 .name{
-    font-size:3rem;
+    font-size:clamp(11px, 3rem, 45px);
     font-weight:500;
     color: var(--text)
 }
 .date{
-    font-size:1.8rem;
+    font-size:clamp(9px, 1.8rem, 24px);
     font-weight:500;
     color: var(--contact-t);
     line-height: 3.6rem;
@@ -149,17 +148,17 @@ hr{
     justify-content:space-between;
 }
 .description{
-    margin: .5rem;
+    margin: 0 1.5rem;
 }
 .desc__text{
-    font-size:1.8rem;
+    font-size:clamp(9px, 1.8rem, 30px);
     font-weight:500;
     color: var(--text);
     padding: .6rem 0 .8rem 0;
 
 }
 .lang{
-    font-size: 1.2rem;
+    font-size: clamp(7px, 1.2rem, 24px);
     padding: 0.4rem 0.8rem;
     margin: 0.9rem 1.6rem 0 0;
     background: var(--lang-bkg);
@@ -192,7 +191,7 @@ img{
     margin: 8rem 8rem 16.8rem 5rem;
 }
 .subtitle{
-    font-size: 6rem;
+    font-size: clamp(24px, 6rem, 90rem);
     font-weight: 700;
     color:var(--title);
     width: min(40rem, 100%);
@@ -201,11 +200,11 @@ img{
 .project__description{
     margin: 3.4rem 0;
     width: min(60ch, 100%);
-    font-size:1.8rem;
+    font-size:clamp(9px, 1.8rem, 30px);
     line-height: 3.3rem;
 }
 .text{
-    font-size: 1.8rem;
+    font-size: clamp(9px, 1.8rem, 30px);
     line-height: 3.6rem;
     color: var(--text);
 }
@@ -235,7 +234,7 @@ img{
     transform: translateY(-50%)
 }
 .contact__type{
-    font-size:1.6rem;
+    font-size:clamp(7.5px, 1.6rem, 24px);
     font-weight:500;
     line-height: 2.4rem;
     margin: 0.3rem 4rem;
@@ -243,7 +242,7 @@ img{
     text-transform: uppercase;
 }
 .contact{
-    font-size:1.8rem;
+    font-size:clamp(9px, 1.8rem, 30px);
     font-weight:500;
     line-height: 2.4rem;
     margin: 0 4rem 1.8rem;
@@ -254,7 +253,7 @@ img{
 }
 .signature{
     font-family: Linoleo;
-    font-size: 8rem;
+    font-size: clamp(30px, 8rem, 120px);
     font-weight:400;
     color: var(--text)
 }
@@ -269,7 +268,22 @@ img{
     background: var(--header-bkg)
 }
 .rodape__text{
-    font-size: 1.8rem;
+    font-size: clamp(10px, 1.8rem, 30px);
     margin: 1.8rem 0 0;
     color: var(--text)
+}
+@media (max-width: 640px){
+    .project{
+        flex-direction: column-reverse;
+        align-items: center;
+        
+    }
+    .project__about{
+        align-items: center;
+        text-align: center;
+        margin: 2rem 0rem 8rem 0rem;
+    }
+    .text__side{
+        margin: 2rem 3rem 0 0;
+    }
 }
