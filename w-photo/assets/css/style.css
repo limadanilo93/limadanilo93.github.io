@@ -25,12 +25,17 @@ body{
     margin: 0 11.9rem;
     background: var(--main-bkg);
 }
+.cab__container{
+    display:flex;
+    flex-direction: column;
+}
 .cabecalho{
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
     margin-top: 6.05rem;
-    height: 71.3rem;
+    min-height: 71.3rem;
     justify-content:space-between;
+    align-items:center;
 
 }
 a{
@@ -41,8 +46,9 @@ a:hover, a:focus, a:active{
     text-shadow: #6268c0 0 0 5rem;
 }
 .navbar{
+
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 
 }
 .navbar-list{
@@ -63,8 +69,11 @@ a:hover, a:focus, a:active{
 .simple{
     display:flex;
     flex-direction: row;
+    align-self: flex-start;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    min-width: 80%;
+    
 
 }
 .headline{
@@ -72,21 +81,32 @@ a:hover, a:focus, a:active{
     font-weight:700;
     color:var(--title);
     margin-left: 8.1rem;
+    margin-right: -40rem;
 }
 .headline:hover, .headline:focus, .headline:active{
     text-shadow: #d3963b 0 0 4rem;
 }
 .extra{
-    display:flex;
+    display:none;
     flex-direction: column;
-}
-.extra{
     width: min(55.4rem, 50%);
     font-size: clamp(11px,1.8rem, 22px);
     align-self: flex-end;
     line-height: 3.6rem;
     color: var(--text);
 
+}
+.photo__container{
+
+margin: 0 0rem 0 10rem;
+min-width: 100%;
+}
+.profile{
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: clamp(10rem, 50%, 50rem);
+    
 }
 .social__links{
     display: inline-block;
@@ -114,12 +134,13 @@ hr{
 
 }
 .download__cv{
+    align-self: flex-start;
     background: var(--iten-bkg);
     width: fit-content;
     padding: 4rem 4.9rem 3.7rem 4rem;
     font-size:clamp(16px, 3.6rem, 42px);
     text-transform: uppercase;
-    margin: 2rem 0 0 8.1rem;
+    margin: -12rem 0 0 8.1rem;
     font-weight: 500;
 }
 .download__cv:hover, .download__cv:focus, .download__cv:active{
@@ -298,5 +319,19 @@ img{
     }
     .text__side{
         margin: 2rem 3rem 0 0;
+    }
+    .photo__container{
+        display: none;
+    }
+    .headline{
+        margin-right: 2rem;
+    }
+    .simple{
+        flex-direction: column;
+        justify-self: flex-end;
+    }
+    .extra{
+        display:flex;
+        margin: 15rem auto;
     }
 }
