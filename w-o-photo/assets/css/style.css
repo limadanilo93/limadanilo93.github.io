@@ -33,6 +33,13 @@ body{
     justify-content:space-between;
 
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover, a:focus, a:active{
+    text-shadow: #6268c0 0 0 5rem;
+}
 .navbar{
     display: flex;
     justify-content: flex-end;
@@ -49,10 +56,10 @@ body{
     text-transform: uppercase;
 
 }
-a{
-    text-decoration: none;
-    color: inherit;
+.nav-item:hover, .nav-item:active, .nav-item:focus {
+    text-shadow: #d33b3b 0 0 4rem;
 }
+
 .simple{
     display:flex;
     flex-direction: row;
@@ -65,6 +72,9 @@ a{
     font-weight:700;
     color:var(--title);
     margin-left: 8.1rem;
+}
+.headline:hover, .headline:focus, .headline:active{
+    text-shadow: #d3963b 0 0 4rem;
 }
 .extra{
     display:flex;
@@ -111,6 +121,9 @@ hr{
     text-transform: uppercase;
     margin: 2rem 0 0 8.1rem;
     font-weight: 500;
+}
+.download__cv:hover, .download__cv:focus, .download__cv:active{
+    box-shadow: inset #d3963b 0 0 4rem;
 }
 .sections{
     margin: 10rem 0;
